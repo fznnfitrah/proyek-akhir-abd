@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kualitas udara di Jakarta, Depok, dan Malang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="top">
+    <div>
+      <h1>Kualitas udara hari ini</h1>
+      <p class="sub">Prakiraan kualitas udara untuk Jakarta, Depok, dan Malang dari model random forest dan data cuaca terkini.</p>
+    </div>
+    <span class="chip" id="status">Memuat data</span>
+  </header>
+
+  <div class="stage" id="stage">
+    <svg id="svg" viewBox="-10 -10 1000 350" role="img" aria-label="Peta Pulau Jawa dengan tiga kota"></svg>
+    <button class="nav" id="prev" aria-label="Daerah sebelumnya">&#8249;</button>
+    <button class="nav" id="next" aria-label="Daerah berikutnya">&#8250;</button>
+    <nav class="tabs" id="tabs" aria-label="Pilih daerah"></nav>
+  </div>
+
+  <section class="panel" id="panel" aria-live="polite"></section>
+  <section class="summary" id="summary" aria-label="Ringkasan tiga daerah"></section>
+  <ul class="legend" id="legend"></ul>
+  <p class="note">Data cuaca: <a href="https://open-meteo.com/">Open-Meteo.com</a> (CC BY 4.0). Garis pantai pada peta disederhanakan.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

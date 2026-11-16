@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+joblib
+pandas
+requests
+python-dotenv
+scikit-learn==1.9.1   # samakan versinya dengan yang dipakai saat training, mis. scikit-learn==1.5.2
